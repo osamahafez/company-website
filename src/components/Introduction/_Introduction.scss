@@ -1,0 +1,61 @@
+@import '../layout/Navbar/Navbar';
+
+.intro {
+    background: url('./assets/images/yellow-background-waves.png');
+    background-position: center center;
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+    
+        section {
+        text-align: center;
+        padding-bottom: 3em;
+        display: flex;
+        justify-content: space-around;
+        padding: 2em 1em 7em;
+        
+        img {
+            width: 35%;
+        }
+        
+        span {
+            color: $pink;
+            font-size: 0.8em;
+            text-shadow: none;
+        }
+
+        p {
+            font-size: 3.2em;
+            text-shadow: 0 0 7px $pink;
+            font-family: 'Bowlby One SC', cursive;
+        }
+    }
+}
+
+.main-btn {
+    $btn_main_color: $pink;
+    $btn_sec_color: $yellow;
+    background-image: linear-gradient($btn_main_color, $btn_sec_color);
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin-top: -1em;
+    margin-left: 1em;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    border-radius: 250px;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid $btn_main_color;
+    transition: 0.2s;
+
+    &:hover { 
+        transition: 0.2s;
+        transform: scale(1.05,1.05);
+        box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    }
+
+    &:active { 
+        background-image: linear-gradient($btn_main_color, $btn_main_color);
+        transition: none;
+        color: #000;
+    }
+}
