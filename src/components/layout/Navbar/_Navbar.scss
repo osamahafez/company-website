@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    padding-top: 2em;
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-left: 2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .hover-border {
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 3px;
+            background: $pink;
+            transition: width .3s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+                transition: width 0.3s;
+            }
+        }
+
+    }
+}
