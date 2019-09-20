@@ -1,6 +1,40 @@
+// 'Squada One' cursive | 'Monoton' cursive;
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Squada+One&display=swap');
+
+
 @import './App';
+
+// Main Colors
+$yellow: #fbd54a;
+$pink: #e16369;
+$gray: #24272e;
+$white: #dad8d8;
+$purple: #6f0f9b;
 
 body {
     margin: 0;
     padding: 0;
+    background-color: $gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+//scroll bar
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+  }
+::-webkit-scrollbar-thumb {
+    background: $white;
+    border-radius: 5px;
+  }
+
+
+@import './components/Introduction/Introduction';
+@import './components/Information/Information';
