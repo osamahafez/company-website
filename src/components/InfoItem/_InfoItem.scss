@@ -1,0 +1,29 @@
+.info-item {
+   
+    .icon-holder {
+        background-color: $yellow;
+        padding: 1em 1.1em;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: inline-block;
+
+        img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    h6 {
+        font-size: 1em;
+        margin-top: 10px;
+        color: $white;
+    }
+
+    p {
+        line-height: 1.5em;
+        margin-top: -25px;
+        color: $white;
+    }
+
+
+}
