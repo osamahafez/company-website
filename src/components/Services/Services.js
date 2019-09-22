@@ -9,12 +9,14 @@ const Services = () => {
                         <div className='package package-yellow'>
                             <p>Pro Package</p>
                             <ul className='secondary-list'>
-                                <li>provident omnis voluptas eligendi</li>
-                                <li>Fugiat qui explicabo excepturi</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>adipisicing elit. Quos, dicta nobis</li>
-                                <li>facilis accusantium sed eum</li>
-                                <li>ducimus reiciendis architecto</li>
+                                <li>Employee Profiles</li>
+                                <li>HR Frontend</li>
+                                <li>Ticket Based Support</li>
+                                <li>Document Management</li>
+                                <li>1 Hour Installation Support</li>
+                                <div>
+                                    <button className='yellow-btn'>Buy Now</button>
+                                </div>
                             </ul>
                         </div>
                     </li>
@@ -22,12 +24,14 @@ const Services = () => {
                         <div className='package package-pink'>
                             <p>Premium Package</p>
                             <ul className='secondary-list'>
-                                <li>voluptatum dolores aliquid aliquam</li>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>adipisicing elit. Quos, dicta nobis</li>
-                                <li>facilis accusantium sed eum</li>
-                                <li>ducimus reiciendis architecto</li>
-                                <li>provident omnis voluptas eligendi</li>
+                                <li>Everything in Pro</li>
+                                <li>Custom Field Builder</li>
+                                <li>Premium Support</li>
+                                <li>SMS Notification</li>
+                                <li>All Premium HRM Extensions</li>
+                                <div>
+                                    <button className='pink-btn'>Buy Now</button>
+                                </div>
                             </ul>
                         </div>
                     </li>

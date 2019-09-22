@@ -43,6 +43,10 @@
         color: #fff;
         font-family: 'Squada One', cursive;
     }
+
+    div {
+        text-align: center;
+    }
 }
 
 .package-yellow {
@@ -65,4 +69,60 @@
 }
 
 
-@import '../ServiceItem/ServiceItem';
+.yellow-btn {
+    $btn_main_color: $white;
+    $btn_sec_color: $yellow;
+    background-color: $yellow;
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin-top: -1em;
+    margin-left: 1em;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    border-radius: 250px;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid $btn_main_color;
+    transition: 0.2s;
+
+    &:hover { 
+        transition: 0.2s;
+        transform: scale(1.05,1.05);
+        box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    }
+
+    &:active { 
+        background-image: linear-gradient($btn_main_color, $btn_main_color);
+        transition: none;
+        color: #000;
+    }
+}
+
+.pink-btn {
+    $btn_main_color: $white;
+    $btn_sec_color: $white;
+    background-color: $pink;
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin-top: -1em;
+    margin-left: 1em;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    border-radius: 250px;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid $btn_main_color;
+    transition: 0.2s;
+
+    &:hover { 
+        transition: 0.2s;
+        transform: scale(1.05,1.05);
+        box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    }
+
+    &:active { 
+        background-image: linear-gradient($btn_main_color, $btn_main_color);
+        transition: none;
+        color: #000;
+    }
+}
