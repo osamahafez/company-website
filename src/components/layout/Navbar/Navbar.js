@@ -8,7 +8,7 @@ const Navbar = (props) => {
             <nav className='nav'>
                 <div className='logo'>
                     <img src={brandIcon} alt="brand-img"/>
-                    Company Website
+                    Smart Link
                 </div>
 
                 <ul className='navbar'>
