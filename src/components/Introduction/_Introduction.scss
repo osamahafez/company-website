@@ -59,3 +59,16 @@
         color: #000;
     }
 }
+
+.problem-solving-svg {
+    animation: hovering 1s infinite alternate;
+}
+
+@keyframes hovering {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
