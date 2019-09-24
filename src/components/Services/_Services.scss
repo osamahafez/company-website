@@ -174,3 +174,33 @@
         height: 150vh;
     }
 }
+
+
+@media only screen and (max-width: 460px) {
+    .services {
+        height: 150vh;
+    }
+    .package {
+        padding: 1em 1em 1em 2em;
+    }
+}
+
+
+@media only screen and (max-width: 381px) {
+    .services {
+        height: 160vh;
+    }
+}
+
+
+@media only screen and (max-width: 368px) {
+    .services {
+        height: 170vh;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .services {
+        height: 180vh;
+    }
+}
