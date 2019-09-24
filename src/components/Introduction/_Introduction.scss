@@ -72,3 +72,58 @@
         transform: translateY(5px);
     }
 }
+
+
+@media only screen and (max-width: 900px) {
+    .intro {
+        section {
+            span {
+                font-size: 0.8em;
+            }
+            p {
+                font-size: 2.5em;
+            }
+        }
+    }
+    .main-btn {
+        padding: 0.5em 2em;
+        margin-top: -1em;
+        margin-left: 1em;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .intro {
+        section {
+            span {
+                font-size: 0.8em;
+            }
+            p {
+                font-size: 1.6em;
+            }
+        }
+    }
+    .main-btn {
+        padding: 0.5em 1.5em;
+        margin-top: -1em;
+        margin-left: 0.5em;
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+    .intro {
+        section {
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+    .main-btn {
+        font-size: 15px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
