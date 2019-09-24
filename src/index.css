@@ -85,6 +85,158 @@ nav .hover-border:hover::after {
   font-size: 1.5em;
 }
 
+.hide-in-desktop {
+  display: none;
+}
+
+.mobile-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mobile-contents .burger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.mobile-contents .mobile-links-content {
+  background: #24272e;
+  width: 175px;
+  height: 150px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.mobile-contents .mobile-links-content::before {
+  content: '';
+  position: absolute;
+  background-color: #24272e;
+  width: 20px;
+  height: 20px;
+  top: 50px;
+  right: 84px;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.mobile-contents .mobile-links-content ul {
+  color: #fbd54a;
+  display: inline-block;
+  text-align: center;
+}
+
+.mobile-contents .mobile-links-content ul li {
+  margin-top: 10px;
+}
+
+.mobile-contents .mobile-links-content ul li a {
+  color: #e16369;
+}
+
+.mobile-contents .mobile-links-content .hover-border-mobile::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fbd54a;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.mobile-contents .mobile-links-content .hover-border-mobile:hover::after {
+  width: 100%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+@media only screen and (max-width: 770px) {
+  .hide-in-mobile {
+    display: none;
+  }
+  .hide-in-desktop {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .logo {
+    font-size: 1.2em;
+  }
+  .logo img {
+    width: 18px;
+    height: 18px;
+  }
+  .mobile-contents .mobile-links-content::before {
+    right: 77px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mobile-contents .mobile-links-content::before {
+    right: 69px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .logo {
+    font-size: 1.2em;
+  }
+  .logo img {
+    width: 13px;
+    height: 13px;
+  }
+  .mobile-contents .burger {
+    width: 20px;
+    height: 20px;
+  }
+  .mobile-contents .mobile-links-content {
+    width: 141px;
+    height: 121px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .mobile-contents .mobile-links-content ul li {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  .mobile-contents .mobile-links-content::before {
+    width: 15px;
+    height: 15px;
+    right: 59px;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .logo {
+    font-size: 1em;
+  }
+  .logo img {
+    width: 13px;
+    height: 13px;
+  }
+  .mobile-contents .mobile-links-content {
+    width: 116px;
+    height: 118px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .mobile-contents .mobile-links-content ul li {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  .mobile-contents .mobile-links-content::before {
+    width: 15px;
+    height: 15px;
+    right: 59px;
+  }
+}
+
 .intro {
   background: url("./assets/images/yellow-background-waves.png");
   background-position: center center;
@@ -180,6 +332,47 @@ nav .hover-border:hover::after {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .intro section span {
+    font-size: 0.8em;
+  }
+  .intro section p {
+    font-size: 2.5em;
+  }
+  .main-btn {
+    padding: 0.5em 2em;
+    margin-top: -1em;
+    margin-left: 1em;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .intro section span {
+    font-size: 0.8em;
+  }
+  .intro section p {
+    font-size: 1.6em;
+  }
+  .main-btn {
+    padding: 0.5em 1.5em;
+    margin-top: -1em;
+    margin-left: 0.5em;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .intro section p {
+    font-size: 1em;
+  }
+  .main-btn {
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
 .info {
   text-align: center;
   margin-top: 3em;
@@ -191,12 +384,12 @@ nav .hover-border:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  margin: 0 -60px;
   padding: 0;
 }
 
 .info ul li {
-  padding: 0 5em;
+  padding: 0 1em;
 }
 
 .info-item .icon-holder {
@@ -224,6 +417,16 @@ nav .hover-border:hover::after {
   color: #dad8d8;
 }
 
+@media only screen and (max-width: 1050px) {
+  .info ul {
+    display: inline-block;
+    margin: 0;
+  }
+  .info ul li {
+    padding: 0.8em 1em;
+  }
+}
+
 .services {
   position: relative;
   background: url("./assets/images/house.jpg") no-repeat;
@@ -249,7 +452,7 @@ nav .hover-border:hover::after {
 }
 
 .services .main-list .main-list-item {
-  margin: 0 5em;
+  margin: 0 3em;
 }
 
 .services .secondary-list {
@@ -366,6 +569,74 @@ nav .hover-border:hover::after {
   color: #000;
 }
 
+@media only screen and (max-width: 1100px) {
+  .services .main-list {
+    margin: 6.8em 0 0;
+  }
+  .services .main-list .main-list-item {
+    margin: 0 2em;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .services .main-list {
+    margin: 6.8em 0 0;
+  }
+  .services .main-list .main-list-item {
+    margin: 0 0.8em;
+  }
+}
+
+@media only screen and (max-width: 873px) {
+  .services {
+    background-image: none;
+    height: 140vh;
+  }
+  .services .main-list {
+    display: block;
+    margin: 1em 0 0;
+  }
+  .services .main-list .main-list-item {
+    margin: 0 0.8em 1em;
+  }
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .services {
+    height: 150vh;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .services {
+    height: 150vh;
+  }
+  .package {
+    padding: 1em 1em 1em 2em;
+  }
+}
+
+@media only screen and (max-width: 381px) {
+  .services {
+    height: 160vh;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  .services {
+    height: 170vh;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .services {
+    height: 180vh;
+  }
+}
+
 .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,6 +698,16 @@ nav .hover-border:hover::after {
   border-radius: 0 0 50% 50%;
 }
 
+@media only screen and (max-width: 843px) {
+  .testimonials {
+    display: block;
+    margin: 0;
+  }
+  .testimonials .testimonials-holder {
+    margin-top: 40px;
+  }
+}
+
 .footer-container {
   width: 100%;
   background: #fbd54a;
@@ -481,5 +762,11 @@ nav .hover-border:hover::after {
 .social-media img {
   margin: 2em 2em 0;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-media img {
+    margin: 1em 1em 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */
