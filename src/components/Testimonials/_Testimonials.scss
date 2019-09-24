@@ -56,3 +56,13 @@
         border-radius: 0 0 50% 50%;
     }
 }
+
+@media only screen and (max-width: 843px) {
+    .testimonials {
+        display: block;
+        margin: 0;
+        .testimonials-holder {
+            margin-top: 40px;
+        }    
+    }
+}
