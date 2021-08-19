@@ -47,6 +47,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  z-index: 20;
 }
 
 nav ul li {
@@ -245,6 +246,8 @@ nav .hover-border:hover::after {
 }
 
 .intro section {
+  position: relative;
+  z-index: 20;
   text-align: center;
   padding-bottom: 3em;
   display: -webkit-box;
@@ -330,6 +333,14 @@ nav .hover-border:hover::after {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
+}
+
+.blob {
+  position: absolute;
+  top: -157px;
+  right: 266px;
+  width: 700px;
+  z-index: 5;
 }
 
 @media only screen and (max-width: 900px) {
