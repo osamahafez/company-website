@@ -53,13 +53,18 @@
     img {
         margin: 2em 2em 0;
         cursor: pointer;
+        transition: all 0.1s linear;
+        &:hover {
+            transition: all 0.1s linear;
+            transform: translateY(-5px);
+        }
     }
 }
 
 @media only screen and (max-width: 600px) {
     .social-media {
         img {
-            margin: 1em 1em 0;
+            margin: 1em 0.5em 0;
         }
     }
 }

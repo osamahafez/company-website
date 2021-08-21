@@ -23,22 +23,24 @@ class Testimonials extends Component {
 
     render() {
 
-            const names = {
-                n1:'Osama Hafez',
-                n2:'Ahmed Youssif',
-                n3:'Sara Sami',
-                n4:'Omar Hany'
-            }
+        const names = {
+            n1:'Osama Hafez',
+            n2:'Ahmed Youssif',
+            n3:'Sara Sami',
+            n4:'Omar Hany'
+        }
 
-            const testimonials = {
-                t1: '"The service is amazing and cheap."',
-                t2: '"Very professional people."',
-                t3: '"One of the best in the field."',
-                t4: '"I recommend it to everybody."'
-            }
+        const testimonials = {
+            t1: '"The service is amazing and cheap."',
+            t2: '"Very professional people."',
+            t3: '"One of the best in the field."',
+            t4: '"I recommend it to everybody."'
+        }
 
 
-            return (
+        return (
+            <div>
+                <h1 className="testimonials-title">Our Awesome Clients</h1>
                 <div className='testimonials'>
                     <div className='testimonials-holder'>
                         <img src={human1} alt="osama"/>
@@ -65,6 +67,8 @@ class Testimonials extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
+
         )
     }
 }

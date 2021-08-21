@@ -14,10 +14,10 @@ const Services = () => {
                                 <li>Ticket Based Support</li>
                                 <li>Document Management</li>
                                 <li>1 Hour Installation Support</li>
-                                <div>
-                                    <button className='yellow-btn'>Buy Now</button>
-                                </div>
                             </ul>
+                            <div>
+                                <button className='yellow-btn'>Buy Now</button>
+                            </div>
                         </div>
                     </li>
                     <li className='main-list-item'> 
@@ -29,10 +29,10 @@ const Services = () => {
                                 <li>Premium Support</li>
                                 <li>SMS Notification</li>
                                 <li>All Premium HRM Extensions</li>
-                                <div>
-                                    <button className='pink-btn'>Buy Now</button>
-                                </div>
                             </ul>
+                            <div>
+                                <button className='pink-btn'>Buy Now</button>
+                            </div>
                         </div>
                     </li>
                 </ul>

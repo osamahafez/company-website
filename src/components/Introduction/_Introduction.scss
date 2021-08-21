@@ -7,27 +7,29 @@
     background-size: 100% 100%;
     
         section {
-        text-align: center;
-        padding-bottom: 3em;
-        display: flex;
-        justify-content: space-around;
-        padding: 2em 1em 7em;
-        
-        img {
-            width: 35%;
-        }
-        
-        span {
-            color: $pink;
-            font-size: 0.8em;
-            text-shadow: none;
-        }
+            position: relative;
+            z-index: 20;
+            text-align: center;
+            padding-bottom: 3em;
+            display: flex;
+            justify-content: space-around;
+            padding: 2em 1em 7em;
+            
+            img {
+                width: 35%;
+            }
+            
+            span {
+                color: $pink;
+                font-size: 0.8em;
+                text-shadow: none;
+            }
 
-        p {
-            font-size: 3.2em;
-            text-shadow: 0 0 7px $pink;
-            font-family: 'Bowlby One SC', cursive;
-        }
+            p {
+                font-size: 3.2em;
+                text-shadow: 0 0 7px $pink;
+                font-family: 'Bowlby One SC', cursive;
+            }
     }
 }
 
@@ -73,6 +75,13 @@
     }
 }
 
+.blob {
+    position: absolute;
+    top: -157px;
+    right: 266px;
+    width: 700px;
+    z-index: 5;
+}
 
 @media only screen and (max-width: 900px) {
     .intro {
