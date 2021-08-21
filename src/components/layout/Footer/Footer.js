@@ -7,12 +7,13 @@ import instagram from '../../../assets/images/hollow-cut-instagram.svg';
 import twitter from '../../../assets/images/hollow-cut-twitter.svg';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <footer>
             <div className="footer-container">
                 <div className="container">
                     <img src={brand} alt="brand" />
-                    <p>Smart Link Copyright &copy;</p>
+                    <p>Smart Link Copyright &copy; {currentYear}</p>
                     <div className="social-media">
                         <img src={facebook} alt="facebook"/>
                         <img src={pinterest} alt="pinterest"/>

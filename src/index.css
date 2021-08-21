@@ -799,11 +799,20 @@ nav .hover-border:hover::after {
 .social-media img {
   margin: 2em 2em 0;
   cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.social-media img:hover {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 @media only screen and (max-width: 600px) {
   .social-media img {
-    margin: 1em 1em 0;
+    margin: 1em 0.5em 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
