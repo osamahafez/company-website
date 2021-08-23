@@ -103,13 +103,16 @@
 }
 
 @media only screen and (max-width: 710px) {
+    .problem-solving-svg {
+        display: none;
+    }
     .intro {
         section {
             span {
                 font-size: 0.8em;
             }
             p {
-                font-size: 1.6em;
+                font-size: 2.7em;
             }
         }
     }
@@ -126,7 +129,7 @@
     .intro {
         section {
             p {
-                font-size: 1em;
+                font-size: 1.8em;
             }
         }
     }

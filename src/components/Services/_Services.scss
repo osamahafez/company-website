@@ -151,7 +151,7 @@
 @media only screen and (max-width: 873px) {
     .services {
         background-image: none;
-        height: 140vh;
+        height: 950px;
         .main-list {
            display: block;
            margin: 1em 0 0;
@@ -168,39 +168,15 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .services {
-        height: 150vh;
-    }
-}
-
-
 @media only screen and (max-width: 460px) {
-    .services {
-        height: 150vh;
-    }
     .package {
         width: 70%;
         margin: 0 auto;
     }
 }
 
-
-@media only screen and (max-width: 381px) {
-    .services {
-        height: 160vh;
-    }
-}
-
-
-@media only screen and (max-width: 368px) {
-    .services {
-        height: 170vh;
-    }
-}
-
 @media only screen and (max-width: 340px) {
     .services {
-        height: 180vh;
+        height: 200vh;
     }
 }
