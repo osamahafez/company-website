@@ -163,12 +163,17 @@
     .package {
         margin: 0 auto;
     }
+    
     .dark-overlay {
         background-color: rgba(0, 0, 0, 0);
+        position: relative;
     }
 }
 
 @media only screen and (max-width: 460px) {
+    .services {
+        height: 1000px;
+    }
     .package {
         width: 70%;
         margin: 0 auto;
@@ -177,6 +182,6 @@
 
 @media only screen and (max-width: 340px) {
     .services {
-        height: 200vh;
+        height: 1100px;
     }
 }

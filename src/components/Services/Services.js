@@ -2,6 +2,7 @@ import React from 'react'
 
 const Services = () => {
     return (
+        <div>
         <div className='services'>
             <div className='dark-overlay'>
                 <ul className='main-list'>
@@ -37,6 +38,7 @@ const Services = () => {
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     )
 }
